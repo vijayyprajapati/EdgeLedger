@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body { 
+    font-family: 'Open Sans' , sans-serif;
+    background: white;
+    color: #333;
+    line-height: 1.6;
+}
+ul {
+     list-style: none; 
+     
+}
+
+a {
+    color: white;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    padding: 0 30px;
+
+
+}
+
+.navbar a {
+    color: white;
+    padding: 10px 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: #28a745 2px solid ;
+}
+
+
+.navbar ul {
+    display: flex
+    
+}
+
+.navbar .logo {
+    font-weight: 400;
+}
+
+/* Header */
+.hero {
+    background: url(../image_resources/home/showcase.jpg) no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: white;
+
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.hero .content h1 {
+    font-size: 55px;
+}
+
+.hero .content p {
+    font-size: 23px;
+    max-width: 600px;
+    margin: 20px 0;
+
+}
+/* ye before aur after wala use jo bhi contet hai uske uper ya neeche use krne ke liye krte hai yaha pr before ka use use background img to dull krne ke liye kiya gaya hai */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero * {
+    z-index: 10;
+}
+
+/* icons */
+
+.icons {
+    padding: 30px;
+}
+.icons h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.icons i {
+    background-color: #28a745;
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.flex-items {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.flex-items > div {
+    padding: 20px;
+}
+
+/* Flex columns */
+
+.flex-columns .flex-reverse {
+    
+    flex-direction: row-reverse;
+}
+.flex-columns .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+    height: 100%;
+}
+
+.flex-columns img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+.flex-columns .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+}
+.flex-columns h2 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.flex-columns h4 {
+    margin-bottom: 10px;
+}
+
+.flex-columns p {
+    margin-top: 20px;
+}
+
+.cases img:hover {
+    opacity: 0.7;
+    
+}
+#blog .column {
+    flex-direction: row;
+    flex-basis: 100%;
+    flex: 1;
+    
+}
+
+#blog .column-1 {
+    height: 100%;
+    width: 100%;
+}
+
+#blog .column-2 {
+    background-color: blue;
+    color: white;
+}
+
+
+
+#blog .row {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+#blog .column .column-1,
+#blog .column .column-2 {
+    height: 100%;
+    width: 100%;
+}
+
+#blog img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.team img {
+    border-radius: 50%;
+    padding: 20px;
+}
+
+/* Callback form */
+ #contact { 
+
+    
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    flex: 1;
+    flex-grow: 2;
+
+    
+} 
+#contact .column-1 {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+#contact .column-2 {
+    height: 100%;
+    width: 100%;
+}
+
+.callback-form {
+    width: 100%;
+    padding: 20px 0px;
+    background-color: #f5f5f5;
+}
+
+.callback-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+.callback-form .form-control {
+    margin-bottom: 5px;
+}
+.callback-form input {
+    width: 100%;
+    padding: 4px;
+    height: 40px;
+    border: #f5f5f5 1px solid;
+}
+
+.callback-form input:focus {
+    outline-color: green;
+}
+
+.callback-form .btn {
+    padding: 12px 0px;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+    background-color: rgb(37, 36, 36);
+}
+
+.footer a {
+    color:white;
+}
+
+.footer p {
+    color: white;
+}
+
+.footer a:hover {
+    color: #28a745;
+}
+
+.footer .social > * {
+    margin-right: 30px;
+}
+
+/* Mobile */
+@media(max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+    }
+
+    .navbar a {
+        padding: 10px 10px;
+        margin: 0 3px;
+    }
+
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .flex-columns .column, .flex-grid .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .team img {
+        width: 70%;
+    }
+}
